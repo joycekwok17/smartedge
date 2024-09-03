@@ -13,12 +13,12 @@ this_swarm_subnet='192.168.10.0'
 this_swarm_dhcp_start = 2
 this_swarm_dhcp_end  = 200
 
-database_hostname = '172.18.0.2'
+database_hostname = '192.168.1.128'
 database_port = 9042
 
-coordinator_physical_ip = '192.168.100.6'
+coordinator_physical_ip = '192.168.1.128'
 coordinator_vip='192.168.10.1'
-coordinator_mac = '5a:62:5c:4a:87:59 '
+coordinator_mac = 'd8:3a:dd:a5:ca:b6'
 coordinator_tcp_port = 29997
 node_manager_tcp_port = 29997
 
@@ -26,6 +26,6 @@ default_thrift_port = 9090
 
 
 ap_list = {
-    'AP:004': ['4e:fb:2e:69:a7:53', '192.168.100.4'],
-    'AP:005': ['52:3c:a9:f6:e2:29', '192.168.100.5']
+    'AP:004': ['34:13:e8:61:0a:35', '192.168.4.1'],
+    'AP:005': ['34:13:e8:62:7f:0f', '192.168.5.1']
     }
