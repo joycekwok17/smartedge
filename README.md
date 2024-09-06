@@ -21,11 +21,12 @@ This code has been tested or Raspberry Pi 5 devices and is comprised of three pa
    - install the bmv2 docker container `docker pull p4lang/pi`
    - install the cassandra docker container `docker pull cassandra`
    - install python modules `pip install aenum cassandra-driver`
+(tips) check bmv2 docker container if module thrift is installed for your python.
   
 # Configuring the Network
-1. Configure ==loopback addresses== on ==APs== and ==Nodes==: consult the files /ap_manager/client_monitor/config.py and /node_manager/config.py for instructions on how to do so, e.g.:# ifconfig lo:0 127.0.1.1 netmask 255.255.255.255 up
-2. configure the ==default_wlan_interface== to point to the wifi device name, in the respective config.py files mentioned in step 1.
-3. configure the list ==ap_list== with names, mac, and ip addresses of the access points in the network for example, In the global config file /lib/config.py 
+1. Configure **loopback addresses** on **APs** and **Nodes**: consult the files /ap_manager/client_monitor/config.py and /node_manager/config.py for instructions on how to do so, e.g.:# ifconfig lo:0 127.0.1.1 netmask 255.255.255.255 up
+2. configure the **default_wlan_interface** to point to the wifi device name, in the respective config.py files mentioned in step 1.
+3. configure the list **ap_list** with names, mac, and ip addresses of the access points in the network for example, In the global config file /lib/config.py 
 4. set the ip where the database is hosted by setting the variabla database_hostname and database_port In the global config file  /lib/config.py 
 5. set the IP where the coordinator is located by setting the variables coordinator_physical_ip and coordinator_mac In the global config file  /lib/config.py 
 6. set the variables this_swarm_subnet and coordinator_vip (you can also keep the default values) In the global config file  /lib/config.py 
