@@ -24,6 +24,6 @@ else
     alias sudo='sudo '
 fi 
 
-sudo python coordinator.py
+sudo $(which python) coordinator.py
 
 
