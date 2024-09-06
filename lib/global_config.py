@@ -13,10 +13,10 @@ this_swarm_subnet='192.168.10.0'
 this_swarm_dhcp_start = 2
 this_swarm_dhcp_end  = 200
 
-database_hostname = '192.168.1.128'
+database_hostname = '192.168.1.127'
 database_port = 9042
 
-coordinator_physical_ip = '192.168.1.128'
+coordinator_physical_ip = '192.168.1.127'
 coordinator_vip='192.168.10.1'
 coordinator_mac = 'd8:3a:dd:a5:ca:b6'
 coordinator_tcp_port = 29997
@@ -27,5 +27,5 @@ default_thrift_port = 9090
 
 ap_list = {
     'AP:004': ['34:13:e8:61:0a:35', '192.168.4.1'],
-    'AP:005': ['34:13:e8:62:7f:0f', '192.168.5.1']
+    'AP:005': ['d8:3a:dd:47:4d:e3', '192.168.5.1']
     }
