@@ -22,7 +22,8 @@ This code has been tested or Raspberry Pi 5 devices and is comprised of three pa
    - install the cassandra docker container `docker pull cassandra`
    - install python modules `pip install aenum cassandra-driver`
      
-(tips) check insdie bmv2 docker container if module thrift is installed for your python, otherwise "simple_switch_CLI" would not work.
+(tips) check insdie bmv2 docker container if module thrift is installed for your python, otherwise "simple_switch_CLI" would not work. to fix:python3.6 -m pip install thrift
+
   
 # Configuring the Network
 1. Configure **loopback addresses** on **APs** and **Nodes**: consult the files /ap_manager/client_monitor/config.py and /node_manager/config.py for instructions on how to do so, e.g.:# ifconfig lo:0 127.0.1.1 netmask 255.255.255.255 up
