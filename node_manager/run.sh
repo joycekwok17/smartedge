@@ -24,6 +24,6 @@ else
     alias sudo='sudo '
 fi 
 
-sudo python node_manager.py
+sudo $(which python) node_manager.py
 
 
