@@ -24,6 +24,6 @@ else
     alias sudo='sudo '
 fi 
 
-sudo python ap_manager.py
+sudo $(which python) ap_manager.py
 
 
